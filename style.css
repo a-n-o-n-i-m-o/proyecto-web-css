@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  background-color: #000000;
+  font-family: "Poppins", sans-serif; /* Corregido: 'Poopins' a 'Poppins' */
+}
+
+body {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+  decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+a:hover {
+  color: #db241b;
+}
+
+hero {
+  margin-top: 100px;
+}
+
+.header_container {
+  display: flex;
+  column-gap: 50px;
+  justify-content: space-between;
+}
+
+.container {
+  
+  margin: 0 auto;
+}
+
+.subtittle{
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-products{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.menu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.products {
+  margin-top: 50px;
+}
+
+.menu-1 {
+  margin-right: 180px;
+}
+
+.menu-2 {
+  margin-left: 180px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.logo-1 {
+  width: 150px; /* Corregido: Cambié 'width: 0' a 'width: 150px' */
+}
+
+.logo-2 {
+  width: 150px;
+}
+
+.socials {
+  display: flex;
+  text-align: center;
+}
+
+.social {
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #db241b;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social:hover {
+  background-color: #db241b;
+}
+
+.social img {
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  margin-top: 200px;
+  padding-bottom: 50px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider-text {
+  margin-left: 85px;
+  width: 50%;
+}
+
+.slider-text h1 {
+  font-size: 70px;
+  color: #ffffff;
+  text-transform: uppercase; /* Corregido: 'TEXT-TRANSFORM' a 'text-transform' */
+  font-weight: 800; /* Corregido: 'FONT-WEIGTH' a 'font-weight' */
+}
+
+.footer {
+  background-color: #1a1a1a;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_tittle {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container-products{
+  width: 95%;
+}
+
+.info-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* SWIPER */
+
+.swiper {
+    width: 90%;
+    height: 30rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+  .img-background{
+    background-image: url('https://previews.123rf.com/images/plateresca/plateresca2012/plateresca201200054/160546002-panorama-de-comida-toma-de-arriba-hacia-abajo-carne-pollo-salm%C3%B3n-y-mariscos-frutas-y-verduras.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .img-background2{
+    background-image: url('https://previews.123rf.com/images/cookshootsfood/cookshootsfood2104/cookshootsfood210400108/168111528-panor%C3%A1mica-de-comida-y-bebida-mexicana-plano-superior-plano-panor%C3%A1mico-de-nachos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .img-background3{
+    background-image: url('https://previews.123rf.com/images/baibakova/baibakova1905/baibakova190500001/122314563-platos-de-pasta-comida-italiana-panor%C3%A1mica-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* BUTTON */
+
+  .button {
+    --color: #FFFFFF;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   
